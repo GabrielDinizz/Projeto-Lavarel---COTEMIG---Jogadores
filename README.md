@@ -1,1 +1,1 @@
-# Projeto-Lavarel - COTEMIG - Jogadores
+# Projeto Lavarel - COTEMIG - Jogadores
