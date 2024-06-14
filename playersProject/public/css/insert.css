@@ -1,0 +1,66 @@
+h2{
+    margin: 1%;
+}
+
+.insert-container {
+    background-color: white;
+    border-radius: 40px;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.insert-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nome valor posicao submit"
+                          "pais status clube submit";
+}
+
+.insert-spaces{    
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(0, 172, 79);
+    margin-left: 5px;
+    width: 50%;
+}
+
+
+.nome {
+    grid-area: nome;
+}
+
+.pais {
+    grid-area: pais;
+}
+
+.valor {
+    grid-area: valor;
+}
+
+.status {
+    grid-area: status;
+}
+
+.posicao {
+    grid-area: posicao;
+}
+
+.clube {
+    grid-area: clube;
+}
+
+.submit {
+    justify-self: center;
+    align-self: center;
+    grid-area: submit;
+    height: 4.5vh;
+    width: 60%;
+    border-radius: 50px;
+    background-color: rgb(0, 172, 79);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer
+}
