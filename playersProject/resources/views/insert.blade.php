@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="{{ asset('css/insert.css') }}">
 </header>
 
+<x-painel/>
+
 <h2>Inserir Jogador</h2>
         <form method="get" class="insert-form">
             @csrf

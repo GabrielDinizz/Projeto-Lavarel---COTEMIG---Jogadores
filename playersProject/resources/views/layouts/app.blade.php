@@ -15,7 +15,9 @@
 </head>
 
 <body>
-
+<div class="info-container">
+@yield('painelPlayer')
+</div>
     <div class="insert-container">
         @yield('insertPlayers')
     </div>
