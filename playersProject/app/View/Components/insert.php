@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class painel extends Component
+class insert extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class painel extends Component
      */
     public function render()
     {
-        return view('components.painel');
+        return view('components.insert');
     }
 }
