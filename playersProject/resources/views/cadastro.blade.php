@@ -2,8 +2,9 @@
 @section('content')
 
 <div class="insert-container">
-<x-insert/>
+    <x-insert />
 </div>
+
 <div class="list-container">
     <x-list-card />
 </div>
