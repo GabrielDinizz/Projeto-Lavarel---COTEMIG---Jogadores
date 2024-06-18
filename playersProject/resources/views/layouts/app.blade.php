@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="insert-container">
+    <div>
         @yield('content')
     </div>
 </body>
