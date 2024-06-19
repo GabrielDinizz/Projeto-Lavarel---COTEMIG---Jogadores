@@ -8,5 +8,4 @@
 <div class="list-container">
     <x-list-card />
 </div>
-
 @endsection
