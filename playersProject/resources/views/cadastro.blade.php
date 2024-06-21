@@ -6,7 +6,7 @@
 </div>
 
 <div id="list-container" class="component">
-    <x-list-card />
+    <x-list-card :jogadores="$jogadores" />
 </div>
 
 @endsection

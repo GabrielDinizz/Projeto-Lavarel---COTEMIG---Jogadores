@@ -11,9 +11,11 @@ class listCard extends Component
      *
      * @return void
      */
-    public function __construct()
+    
+    public $jogadores;
+    public function __construct($jogadores)
     {
-        //
+        $this->jogadores = $jogadores;
     }
 
     /**

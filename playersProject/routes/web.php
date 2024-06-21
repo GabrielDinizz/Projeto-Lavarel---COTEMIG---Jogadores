@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JogadorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/cadastrar', function () {
-    return view('cadastro');
-});
+Route::get('/', [JogadorController::class, 'index']);
+Route::get('/cadastrar', [JogadorController::class, 'cadastro']);
+Route::post('/store', [JogadorController::class, 'store']);

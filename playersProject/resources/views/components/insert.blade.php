@@ -3,7 +3,7 @@
 </header>
 
 <h2>Inserir Jogador</h2>
-<form method="get" class="insert-form">
+<form action="/store" method="post" class="insert-form">
     @csrf
 
     <p class="nome">
