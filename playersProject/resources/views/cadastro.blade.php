@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="insert-container">
+<div id="insert-container" class="component">
     <x-insert />
 </div>
 
-<div class="list-container">
+<div id="list-container" class="component">
     <x-list-card />
 </div>
 

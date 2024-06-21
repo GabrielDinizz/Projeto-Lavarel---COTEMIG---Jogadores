@@ -2,7 +2,7 @@ h2{
     margin: 1%;
 }
 
-.insert-container {
+#insert-container {
     background-color: white;
     border-radius: 40px;
     width: 50%;
