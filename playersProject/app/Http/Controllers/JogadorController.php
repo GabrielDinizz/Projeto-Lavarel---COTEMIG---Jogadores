@@ -40,4 +40,12 @@ class JogadorController extends Controller
         return redirect('cadastrar');
     }
 
+    public function destroy($id)
+    {
+        
+        Jogador::findOrFail($id)->delete(); 
+
+        return redirect('cadastrar')->with('msg', 'Jogador excluído com sucesso!'); 
+    }
+
 }

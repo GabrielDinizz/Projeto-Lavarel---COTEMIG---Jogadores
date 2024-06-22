@@ -16,3 +16,4 @@ use App\Http\Controllers\JogadorController;
 Route::get('/', [JogadorController::class, 'index']);
 Route::get('/cadastrar', [JogadorController::class, 'cadastro']);
 Route::post('/store', [JogadorController::class, 'store']);
+Route::delete('/cadastrar/{id}', [JogadorController::class,'destroy']); 
