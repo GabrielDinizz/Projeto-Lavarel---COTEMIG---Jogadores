@@ -27,8 +27,8 @@
             <th>{{$jogador->pais}}</th>
             <th>{{$jogador->status}}</th>
             <th><a href="{{ $jogador->id }}/edit"><button type="submit" class="btn btn-danger delete-btn">
-                    <i class="fas fa-edit"></i> Editar
-                </button></a>
+                        <i class="fas fa-edit"></i> Editar
+                    </button></a>
             </th>
             <th>
                 <form action="/cadastrar/{{$jogador->id}}" method="POST">

@@ -13,7 +13,7 @@
     <p class="pais">
         <Label for="Pais">País</Label>
         <select name="pais" class="insert-spaces" id="pais">
-            <option value="brasil" {{ "$jogador->pais" == 'brasil' ? 'selected' : ' }}</option>
+            <option value="brasil" {{ "$jogador->pais" == 'brasil' ? 'selected' : ' '}}</option>
             <!-- Adicione outras opções conforme necessário -->
         </select>
     </p>

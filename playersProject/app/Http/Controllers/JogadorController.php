@@ -40,11 +40,27 @@ class JogadorController extends Controller
         return redirect('cadastrar');
     }
 
-    public function destroy($id)
-    {
-        
-        Jogador::findOrFail($id)->delete(); 
+    public function edit($id){
+        $jogador = Jogador::find($id);
+        return view('edit', ['jogador' => $jogador]);
+    }
 
+    public function update(Request $request, $id)
+    {
+        $jogador = Jogador::find($id);
+        $jogador->nome = $request->nome;
+        $jogador->pais = $request->pais;
+        $jogador->valor = $request->valor;
+        $jogador->status = $request->status;
+        $jogador->posicao = $request->posicao;
+        $jogador->clube = $request->clube;
+        $jogador->save();
+        return redirect('cadastrar')->with('msg', 'Jogador atualizado com sucesso!');
+    }
+
+    public function destroy($id)
+    {        
+        Jogador::findOrFail($id)->delete(); 
         return redirect('cadastrar')->with('msg', 'Jogador excluído com sucesso!'); 
     }
 
