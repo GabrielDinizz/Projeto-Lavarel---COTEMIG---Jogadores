@@ -27,11 +27,12 @@
 
     <p class="status">
         <label for="Status">Status</label>
-        <select class="insert-spaces" type="text" name="status" placeholder="Status">
-            <option value="ativo">Ativo</option>
-            <option value="inativo">Inativo</option>
+        <select class="insert-spaces" name="status" id="statusOptions">
+            <option value="ativo" id="ativo">Ativo</option>
+            <option value="inativo" id="inativo">Inativo</option>
         </select>
     </p>
+
 
     <p class="posicao">
         <label for="Posição">Posição</label>

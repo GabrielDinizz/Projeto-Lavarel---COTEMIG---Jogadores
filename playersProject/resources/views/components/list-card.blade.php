@@ -4,7 +4,6 @@
 <div class="tittle">
     <h2>Todos os Jogadores</h2>
     <h5>Active Menbers</h5>
-    <input type="text" name="search" placeholder="Search" class="search">
 </div>
 <div class="table">
     <table>

@@ -5,6 +5,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 20px;
 }
 h2{
     margin: 0;
@@ -13,32 +14,6 @@ h5{
     font-weight: 500;
     color: #255146;
     margin: 0;
-}
-.tittle {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.search {
-    grid-column: 2;
-    grid-row: 1 / 3;
-    align-self: center;
-    justify-self: stretch;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: #DAFFEB;
-}
-.search::placeholder {
-    align-items: center;
-    color: #73BB94;
-    font-weight: 500;
-    padding-left: 10px;
-}
-.search:focus {
-    outline: none;
-    border: 1px solid #73BB94;
-    background-color: white;
 }
 table{
     width: 100%;
@@ -91,8 +66,3 @@ table th{
 .btn.delete-btn:hover {
     background-color: #73BB94;
 }
-
-.btn.delete-btn i {
-    margin-right: 5px;
-}
-
