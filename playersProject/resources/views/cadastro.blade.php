@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div id="insert-container" class="component">
+<div id="painel-container" class="component">
     <x-painel />
 </div>
 

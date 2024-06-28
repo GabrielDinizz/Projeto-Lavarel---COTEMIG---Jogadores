@@ -2,18 +2,18 @@
 
 body, html {
     font-family: Arial, sans-serif;
-
-
-
+    font-size: 16px; /* Tamanho base da fonte */
+    margin: 0;
+    padding: 0;
 }
 
 .info-container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 52%;
+    margin: auto; /* Centraliza o container */
     padding: 20px;
     background-color: #fff; /* Fundo branco */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
- 
+    border-radius: 40px;
 }
 
 .info {
@@ -21,11 +21,11 @@ body, html {
 }
 
 .info-1 {
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Removido o margin-bottom */
 }
 
 .info-1 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Tamanho da fonte do título */
     display: inline-block; /* Para permitir que o span fique ao lado */
 }
 
@@ -36,22 +36,23 @@ body, html {
 .categorias {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .categoria {
     text-align: center;
-    padding: 20px;
-    margin: 0 10px;
-
+    padding: 15px;
     border-radius: 5px;
+    background-color: #f0f0f0; /* Fundo cinza claro */
 }
 
 .categoria h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Tamanho da fonte do título da categoria */
+    margin-bottom: 10px;
 }
 
 .categoria p {
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Tamanho da fonte do texto da quantidade */
     color: #888; /* Cor cinza para a quantidade */
 }
+
