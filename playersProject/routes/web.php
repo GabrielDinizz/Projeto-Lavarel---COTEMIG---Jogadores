@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JogadorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/cadastrar', function () {
-    return view('cadastro');
-});
+Route::get('/', [JogadorController::class, 'index']);
+Route::get('/cadastrar', [JogadorController::class, 'cadastro']);
+Route::post('/store', [JogadorController::class, 'store']);
+Route::delete('/cadastrar/{id}', [JogadorController::class, 'destroy']); 
+Route::get('/{id}/edit', [JogadorController::class, 'edit']);
+Route::put('/update/{id}', [JogadorController::class, 'update']);

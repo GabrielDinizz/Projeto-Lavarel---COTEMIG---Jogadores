@@ -1,17 +1,16 @@
 @extends('layouts.app')
 @section('content')
 
-
 <div class="insert-container">
     <x-painel/>
 </div>
 
-<div class="insert-container">
+<div id="insert-container" class="component">
     <x-insert />
 </div>
 
-<div class="list-container">
-    <x-list-card />
+<div id="list-container" class="component">
+    <x-list-card :jogadores="$jogadores" />
 </div>
 
 @endsection
