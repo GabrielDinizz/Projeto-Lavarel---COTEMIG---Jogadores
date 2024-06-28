@@ -12,6 +12,10 @@
 </head>
 
 <body>
+<nav class="navi">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/cadastrar" class="nav-link">Cadastrar</a>
+</nav>
     <div>
         @yield('content')
     </div>

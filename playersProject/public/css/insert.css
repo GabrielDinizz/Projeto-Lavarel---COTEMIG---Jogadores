@@ -1,4 +1,4 @@
-h2{
+h2 {
     margin: 1%;
 }
 
@@ -9,23 +9,27 @@ h2{
     height: 100%;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 2vh;
 }
 
 .insert-form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "nome valor posicao submit"
-                          "pais status clube submit";
+    grid-template-areas: 
+        "nome valor posicao submit"
+        "pais status clube submit";
 }
 
-.insert-spaces{    
+.insert-spaces {
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(0, 172, 79);
     margin-left: 5px;
-    width: 50%;
+    width: 80%
 }
-
+.insert-label {
+    margin-right: 100%;
+}
 
 .nome {
     grid-area: nome;
@@ -58,9 +62,52 @@ h2{
     height: 4.5vh;
     width: 60%;
     border-radius: 50px;
-    background-color: rgb(0, 172, 79);
+    background-color: green;
     color: white;
     border: none;
     font-size: 20px;
-    cursor: pointer
+    cursor: pointer;
+}
+
+/* Media Queries para telas até 768px */
+@media (max-width: 768px) {
+    #insert-container {
+        width: 70%;
+    }
+
+    .insert-form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "nome valor"
+            "posicao status"
+            "pais clube"
+            "submit submit";
+    }
+
+    .insert-spaces {
+        width: 70%;
+    }
+}
+
+/* Media Queries para telas até 576px */
+@media (max-width: 576px) {
+    #insert-container {
+        width: 90%;
+    }
+
+    .insert-form {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nome"
+            "valor"
+            "posicao"
+            "status"
+            "pais"
+            "clube"
+            "submit";
+    }
+
+    .insert-spaces {
+        width: 90%;
+    }
 }
