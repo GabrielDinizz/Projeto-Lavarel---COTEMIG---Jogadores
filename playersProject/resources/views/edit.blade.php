@@ -7,6 +7,7 @@
     <script src="{{ asset('js/aproveInsert.js') }}" defer></script>
 </header>
 <div id="edit-container">
+    <h2>Editar Jogador</h2>
     <form action="/update/{{ $jogador->id }}" class="insert-form" method="post" onsubmit="return validarFormulario();">
         @csrf
         @method('PUT')

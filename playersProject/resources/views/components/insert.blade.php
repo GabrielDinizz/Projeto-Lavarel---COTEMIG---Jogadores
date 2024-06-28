@@ -9,24 +9,24 @@
     @csrf
 
     <p class="nome">
-        <label for="Nome">Nome</label>
+        <label class="insert-label" for="Nome">Nome</label>
         <input class="insert-spaces" type="text" name="nome" placeholder="Nome">
     </p>
 
     <p class="pais">
-        <Label for="Pais">País</label>
+        <Label class="insert-label" for="Pais">País</label>
         <select name="pais" class="insert-spaces">
             <option>Selecione o País</option>
         </select>
     </p>
 
     <p class="valor">
-        <label for="Valor">Valor</label>
+        <label class="insert-label" for="Valor">Valor</label>
         <input class="insert-spaces" type="number" name="valor" placeholder="Valor">
     </p>
 
     <p class="status">
-        <label for="Status">Status</label>
+        <label class="insert-label" for="Status">Status</label>
         <select class="insert-spaces" name="status" id="statusOptions">
             <option value="ativo" id="ativo">Ativo</option>
             <option value="inativo" id="inativo">Inativo</option>
@@ -35,7 +35,7 @@
 
 
     <p class="posicao">
-        <label for="Posição">Posição</label>
+        <label class="insert-label" for="Posição">Posição</label>
         <select name="posicao" class="insert-spaces">
             <option>Selecione a Posição</option>
             <option value="goleiro">Goleiro</option>
@@ -53,7 +53,7 @@
     </p>
 
     <p class="clube">
-        <label for="clube">Clube</label>
+        <label class="insert-label" for="clube">Clube</label>
         <input type="text" name="clube" class="insert-spaces" placeholder="Clube">
     </p>
 
