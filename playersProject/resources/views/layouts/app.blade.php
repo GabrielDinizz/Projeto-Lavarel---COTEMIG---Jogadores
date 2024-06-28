@@ -13,8 +13,21 @@
 </head>
 
 <body>
+<nav class="navi">
+   
+    <div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cadastrar">Cadastrar</a></li>
+    
+    </ul>
+
+    </div>
+</nav>
+
     <div>
         @yield('content')
+
     </div>
 </body>
 

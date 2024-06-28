@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+Route::get('/', function () {
+    return view('index');
+});
+
 Route::get('/cadastrar', function () {
     return view('cadastro');
 });

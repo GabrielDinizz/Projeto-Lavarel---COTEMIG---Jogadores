@@ -1,0 +1,16 @@
+.main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+}

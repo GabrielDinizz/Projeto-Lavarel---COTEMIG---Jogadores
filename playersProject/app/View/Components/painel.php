@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class painel extends Component
+class Painel extends Component
 {
     /**
      * Create a new component instance.
