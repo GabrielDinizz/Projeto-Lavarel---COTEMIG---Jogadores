@@ -1,14 +1,10 @@
-h2{
-    margin: 1%;
-}
-
-#insert-container {
+#edit-container {
     background-color: white;
     border-radius: 40px;
     width: 50%;
     height: 100%;
+    padding: 50px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .insert-form {
@@ -25,7 +21,6 @@ h2{
     margin-left: 5px;
     width: 50%;
 }
-
 
 .nome {
     grid-area: nome;

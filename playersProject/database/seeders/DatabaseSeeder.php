@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Jogador;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,9 +17,20 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        /*  \App\Models\User::factory()->create([
+            'name' => 'Test User',
+             'email' => 'test@example.com',
+        ]); */
+
+        Jogador::create(
+            [
+                'nome' => 'Marco',
+                'valor' => '100.000',
+                'status' => 'Ativo',
+                'pais' => 'Brasil',
+                'posicao' => 'Centro-Avante',
+                'clube' => 'Flamengo',
+            ]
+        );
     }
 }
