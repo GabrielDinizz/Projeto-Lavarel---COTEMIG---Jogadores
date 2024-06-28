@@ -1,8 +1,8 @@
-<header>
+<head>
     <link rel="stylesheet" href="{{ asset('css/insert.css') }}">
     <script src="{{ asset('js/countries.js') }}" defer></script>
     <script src="{{ asset('js/aproveInsert.js') }}" defer></script>
-</header>
+</head>
 
 <h2>Inserir Jogador</h2>
 <form action="/store" method="post" class="insert-form" onsubmit="return validarFormulario();">

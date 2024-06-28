@@ -14,7 +14,7 @@ class JogadorController extends Controller
 
     public function cadastro()
 {
-    $jogadores = Jogador::paginate(10); 
+    $jogadores = Jogador::paginate(5); 
 
     return view('cadastro', compact('jogadores'));
 }

@@ -1,111 +1,156 @@
-#list-container{
+#list-container {
+    width: 50%;
+    margin: 20px auto;
     background-color: white;
     border-radius: 40px;
-    width: 50%;
-    height: 100%;
-    margin: 0 auto;
     padding: 20px;
-    margin-top: 20px;
-}
-h2{
-    margin: 0;
-}
-h5{
-    font-weight: 500;
-    color: #255146;
-    margin: 0;
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-table td{
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.438);
-    color: rgba(128, 128, 128, 0.438);
-    font-weight: 500;
-}
-table th{
-    text-align: center;
-    padding: 20px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.438);
-}
-.ativo{
-    padding: 4px 10px;
-    color: #008767;
-    border-radius: 5px;
-    height: 10px;
-}
-.aposentado{
-    padding: 4px 10px;
-    color: #D32F2F;
-    border-radius: 5px;
-    height: 10px;
-}
-.edit{
-    cursor: pointer;
-}
-.delete{
-    cursor: pointer;
-    color: #D32F2F;
-    text-decoration: none;
-}
-.btn.delete-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #00AC4F;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.btn.delete-btn:hover {
-    background-color: #73BB94;
+.title > h5 {
+    margin-left: 20px;  
 }
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.inativo {
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.btn-danger {
+    background-color: green;
+}
+
+.btn-danger:hover {
+    background-color: green;
+}
+
 .pagination {
-    margin-top: 20px;
     text-align: center;
+    margin: 20px 0;
 }
 
 .pagination ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block;
 }
 
-.pagination ul li {
-    display: inline-block;
-    margin-right: 5px;
+.pagination li {
+    display: inline;
+    margin: 0 5px;
 }
 
-.pagination ul li span,
-.pagination ul li a {
-    display: inline-block;
-    padding: 8px 16px;
-    border: 1px solid #ddd;
+.pagination a, .pagination span {
     text-decoration: none;
+    padding: 8px 16px;
     color: #333;
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
-.pagination ul li a:hover {
-    background-color: #f0f0f0;
+.pagination a:hover {
+    background-color: #ddd;
 }
 
-.pagination ul li.active span {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-
-.pagination ul li.disabled span,
-.pagination ul li.disabled a {
-    color: #aaa;
-    pointer-events: none;
+.pagination span {
+    background-color: #eee;
     cursor: default;
+}
+
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+    #list-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .pagination a, .pagination span {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Responsividade para telas até 576px */
+@media (max-width: 576px) {
+    #list-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .pagination a, .pagination span {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+    }
 }

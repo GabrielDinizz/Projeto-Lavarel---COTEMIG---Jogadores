@@ -1,11 +1,11 @@
 <header>
     <link rel="stylesheet" href="{{ asset('css/list.css') }}">
 </header>
-<div class="tittle">
+<div class="title">
     <h2>Todos os Jogadores</h2>
-    <h5>Active Menbers</h5>
+    <h5>Active Members</h5>
 </div>
-<div class="table">
+<div class="table-wrapper">
     <table>
         <thead>
             <tr>
@@ -27,10 +27,10 @@
                 <td>{{ $jogador->posicao }}</td>
                 <td>{{ $jogador->clube }}</td>
                 <td>{{ $jogador->pais }}</td>
-                <td>{{ $jogador->status }}</td>
+                <td class="{{ $jogador->status == 'Ativo' ? 'ativo' : 'inativo' }}">{{ $jogador->status }}</td>
                 <td>
                     <a href="{{ $jogador->id }}/edit">
-                        <button type="button" class="btn btn-danger delete-btn">
+                        <button type="button" class="btn btn-danger">
                             <i class="fas fa-edit"></i> Editar
                         </button>
                     </a>
@@ -39,7 +39,7 @@
                     <form action="/cadastrar/{{ $jogador->id }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger delete-btn">
+                        <button type="submit" class="btn btn-danger">
                             <i class="fas fa-trash-alt"></i> Deletar
                         </button>
                     </form>
@@ -78,4 +78,3 @@
         </ul>
     @endif
 </div>
-        
