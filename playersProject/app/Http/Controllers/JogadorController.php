@@ -13,10 +13,13 @@ class JogadorController extends Controller
     }
 
     public function cadastro()
-    {
-        $jogadores = Jogador::get();
-        return view('cadastro')->with('jogadores', $jogadores);
-    }
+{
+    $jogadores = Jogador::paginate(10); 
+
+    return view('cadastro', compact('jogadores'));
+}
+
+
 
     public function store(Request $request)
     {
