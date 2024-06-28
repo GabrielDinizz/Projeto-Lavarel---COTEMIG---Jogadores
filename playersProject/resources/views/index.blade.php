@@ -1,11 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<header>
+<head>
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-</header>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head>
 
-<div class="welcome" style="background-image: url('{{ asset('images/pexels-bohlemedia-1884574.jpg') }}');">
+<style>
+    body{
+        background-image: url("{{ asset('images/homePicture.jpg') }}");
+        background-size: cover;	
+    }
+</style>
+
+<div class="welcome">
     <div class="welcome-content">
         <div class="content-left">
             <h1 class="welcome-title">SEJA BEM-VINDO AO CADASTRE SEU JOGADOR!</h1>
