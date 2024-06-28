@@ -28,8 +28,8 @@
     <p class="status">
         <label class="insert-label" for="Status">Status</label>
         <select class="insert-spaces" name="status" id="statusOptions">
-            <option value="ativo" id="ativo">Ativo</option>
-            <option value="inativo" id="inativo">Inativo</option>
+            <option value="Ativo" id="ativo">Ativo</option>
+            <option value="Inativo" id="inativo">Inativo</option>
         </select>
     </p>
 
