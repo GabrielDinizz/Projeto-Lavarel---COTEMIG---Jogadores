@@ -2,6 +2,10 @@
 @section('content')
 
 <div id="insert-container" class="component">
+    <x-painel />
+</div>
+
+<div id="insert-container" class="component">
     <x-insert />
 </div>
 

@@ -19,3 +19,5 @@ Route::post('/store', [JogadorController::class, 'store']);
 Route::delete('/cadastrar/{id}', [JogadorController::class,'destroy']); 
 Route::get('/{id}/edit', [JogadorController::class, 'edit']);
 Route::put('/update/{id}', [JogadorController::class,'update']);
+
+

@@ -1,0 +1,57 @@
+/* Estilos para a página de painel */
+
+body, html {
+    font-family: Arial, sans-serif;
+
+
+
+}
+
+.info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+ 
+}
+
+.info {
+    text-align: center;
+}
+
+.info-1 {
+    margin-bottom: 20px;
+}
+
+.info-1 h1 {
+    font-size: 2.5rem;
+    display: inline-block; /* Para permitir que o span fique ao lado */
+}
+
+.info-1 h1 span {
+    color: #4caf50; /* Cor verde para o valor */
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.categoria {
+    text-align: center;
+    padding: 20px;
+    margin: 0 10px;
+
+    border-radius: 5px;
+}
+
+.categoria h3 {
+    font-size: 1.5rem;
+}
+
+.categoria p {
+    font-size: 1.2rem;
+    color: #888; /* Cor cinza para a quantidade */
+}
